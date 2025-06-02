@@ -1,0 +1,72 @@
+/* Sidebar más ancho */
+#sidebar {
+  width: 260px !important; /* Fuerza el ancho de la barra lateral */
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+}
+
+/* Ajustar el contenido principal */
+.col-md-10 {
+  padding: 40px 30px;
+
+  /* Flex para alinear todo a la derecha */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinear todo a la derecha */
+  justify-content: flex-start;
+}
+
+/* Contenedor interior para limitar ancho de contenido */
+.col-md-10 > .container {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Título alineado a la derecha */
+h1 {
+  width: 100%;
+  text-align: right;
+  color: #2e7d32; /* Verde para mantener estilo */
+  margin-bottom: 1.5rem;
+}
+
+/* Formulario de filtros */
+form.row.g-3.mb-4 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* filtros a la derecha */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Ajustar columnas dentro del form para que tengan ancho fijo y alineación */
+form.row.g-3.mb-4 > div.col-md-3 {
+  max-width: 220px;
+}
+
+/* Botones dentro del form alineados a la derecha */
+form.row.g-3.mb-4 > div.text-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Tabla ocupa todo el ancho disponible y texto normal (izquierda) */
+table.table.table-bordered {
+  width: 100%;
+  margin-top: 0;
+  text-align: left; /* Para lectura normal */
+}
+
+/* Opcional: puedes dar un color al encabezado para que combine */
+table.table.table-bordered thead th {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Opcional: espaciado en celdas */
+table.table.table-bordered td, table.table.table-bordered th {
+  padding: 10px;
+}
